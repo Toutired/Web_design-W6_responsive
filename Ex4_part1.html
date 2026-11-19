@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise4</title>
+    <style>
+        .wrapper{
+            padding: 20px;
+        }
+        .content{
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .big{
+            display: none;
+            background-color: chartreuse;
+            font-size: 100px;
+        }
+        .small{
+            background-color: tomato;
+        }
+
+        @media only screen and (min-width:600px){
+            .small { display: none; }
+            .big  { display: inline-block; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="content">
+      <span class="small">I'm SMALL 😞</span>
+      <span class="big">I'm BIG 😱</span>
+    </div>
+  </div>
+</body>
+</html>
